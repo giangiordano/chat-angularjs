@@ -1,0 +1,33 @@
+<div class="container">
+
+	<br><br><br>
+	
+	<div class="row">
+
+        <form name="formulario" 
+            ng-submit="entrarChat()"
+            novalidate="novalidate">
+        
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-control"
+                        name="nombre"
+                        ng-model="formData.nombre"
+                        required="required">
+            </div>
+
+            <div class="form-group">
+                <label for="sala">Sala de Chat</label>
+                <input type="text" id="sala" class="form-control"
+                        ng-model="formData.sala"
+                        required="required">
+            </div>
+
+           <button type="submit" class="btn btn-primary"> Guardar</button>
+        </form>  
+		
+	</div>
+
+</div>
+
+
